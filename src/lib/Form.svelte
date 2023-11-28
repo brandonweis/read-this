@@ -140,7 +140,7 @@
 				{#if loading}
 					<LoadingIndicator />
 				{:else}
-					<p>Curate My List</p>
+					<p>Submit</p>
 				{/if}
 			</button>
 		</div>
