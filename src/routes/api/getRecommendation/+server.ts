@@ -148,10 +148,10 @@ async function OpenAIStream(payload: any) {
 
 export async function POST({ request }: { request: any }) {
 	// Apply rate limit middleware
-	const rateLimitResult = await rateLimitMiddleware(request);
-	if (rateLimitResult) {
-		return rateLimitResult;
-	}
+	// const rateLimitResult = await rateLimitMiddleware(request);
+	// if (rateLimitResult) {
+	// 	return rateLimitResult;
+	// }
 	const { searched } = await request.json();
 	const payload = {
 		model: 'text-davinci-003',
